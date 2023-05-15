@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.stream.IntStream;
 
+/**
+ * The type App controller.
+ */
 @RestController
 @RequestMapping("/app")
 @Slf4j
@@ -17,6 +20,11 @@ public class AppController {
 
     private final AppService appService ;
 
+    /**
+     * Get string.
+     *
+     * @return the string
+     */
     @GetMapping("/rate")
     public String get(){
         //fake calls to reproduce concurrent calls to exceed the rate limit
