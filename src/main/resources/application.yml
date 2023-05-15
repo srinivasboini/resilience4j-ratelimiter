@@ -29,7 +29,7 @@ resilience4j.ratelimiter:
     default:
       registerHealthIndicator: false
       limitForPeriod: 10
-      limitRefreshPeriod: 1s
+      limitRefreshPeriod: 500ms
       timeoutDuration: 0
       eventConsumerBufferSize: 100
   instances:
